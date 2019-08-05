@@ -35,3 +35,10 @@ Setup Instructions
 #After completion of npm install, Make GamesPortal.API and GamesPortal.UI as startup projects.
 
 #Run the Application by clicking on start button.
+
+#As part of DB Migration Admin user will be created automatically for you.
+
+USER_NAME : admin
+PASSWORD  : admin
+
+#You need to sign up to create Users.
