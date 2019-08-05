@@ -1,0 +1,14 @@
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\bin\Debug\netcoreapp2.1\GamesPortal.API.deps.json
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\bin\Debug\netcoreapp2.1\GamesPortal.API.runtimeconfig.json
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\bin\Debug\netcoreapp2.1\GamesPortal.API.runtimeconfig.dev.json
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\bin\Debug\netcoreapp2.1\GamesPortal.API.dll
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\bin\Debug\netcoreapp2.1\GamesPortal.API.pdb
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\obj\Debug\netcoreapp2.1\GamesPortal.API.csprojAssemblyReference.cache
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\obj\Debug\netcoreapp2.1\GamesPortal.API.csproj.CoreCompileInputs.cache
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\obj\Debug\netcoreapp2.1\GamesPortal.API.RazorAssemblyInfo.cache
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\obj\Debug\netcoreapp2.1\GamesPortal.API.RazorAssemblyInfo.cs
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\obj\Debug\netcoreapp2.1\GamesPortal.API.AssemblyInfoInputs.cache
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\obj\Debug\netcoreapp2.1\GamesPortal.API.AssemblyInfo.cs
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\obj\Debug\netcoreapp2.1\GamesPortal.API.RazorTargetAssemblyInfo.cache
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\obj\Debug\netcoreapp2.1\GamesPortal.API.dll
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.API\obj\Debug\netcoreapp2.1\GamesPortal.API.pdb

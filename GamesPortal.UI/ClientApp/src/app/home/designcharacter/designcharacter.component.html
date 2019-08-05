@@ -1,0 +1,40 @@
+<form #form="ngForm">
+  <div class="modal" *ngIf="character">
+    <div class="modal-header">
+      Design Character {{character.characterName}}
+    </div>
+    <div class="modal-body">
+      <div class="container">
+        <div class="row mb-3">
+          <span>Please enter below required information to create.</span>
+        </div>
+        <div class="row">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Name The Character</span>
+            </div>
+            <input name="characterName" type="text" class="form-control" aria-label="Default"
+                   aria-describedby="inputGroup-sizing-default" [(ngModel)]="character.name" required ngModel>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group mb-3" *ngFor="let property of character.properties; index as i">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">{{property.property}}</span>
+            </div>
+            <input name={{i}} type="text" class="form-control" aria-label="Default"
+                   aria-describedby="inputGroup-sizing-default" [(ngModel)]="property.value" required ngModel>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="col-md-6 alignleft">
+        <button type="button" class="btn btn-primary" (click)="cancel()">Cancel</button>
+      </div>
+      <div class="col-md-6 alignright">
+        <button type="button" class="btn btn-primary" (click)="save()" [disabled]="!form.valid">Save</button>
+      </div>
+    </div>
+  </div>
+  </form>

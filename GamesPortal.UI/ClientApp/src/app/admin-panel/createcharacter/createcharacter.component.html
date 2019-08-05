@@ -1,0 +1,82 @@
+<body>
+  <section class="intro">
+    <div class="row">
+      <h5 class="form-group col-md-6" style="color: rgb(255, 255, 255)"><strong> Max Allowed Characters Users Can Create</strong></h5>
+      <div class="form-group col-md-3">
+        <input type="number" class="form-control" min="5" [(ngModel)]="maxCharacterCount">
+      </div>
+      <div class="form-group col-md-3">
+        <button type="button" class="btn btn-labeled blue" (click)="saveMaxCharacterCount()">
+          <span class="btn-label">Save</span>
+        </button>
+      </div>
+    </div>
+    <div class="row"><p></p><p></p></div>
+    <div class="row">
+      <div class="col-lg-6 col-sm-12 left">
+        <form [formGroup]="characterForm">
+          <h2 class="text-uppercase text-align">create character</h2>
+          <div><p class="text-align">---------------------------------------------------------------------</p></div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-md-5 col-form-label">Character Name</label>
+            <div class="col-sm-7">
+              <input formControlName="characterName" type="text" class="form-control" id="" placeholder="name" required>
+            </div>
+          </div>
+          <div><p class="text-align">---------------------------------------------------------------------</p></div>
+          <p></p>
+          <h3 class="text-align">ADD PROPERTIES</h3>
+          <div><p class="text-align">----------------------------------</p></div>
+          <div formArrayName="properties">
+            <div class="form-group row" *ngFor="let item of properties.controls; let propertyIndex=index"
+                 [formGroupName]="propertyIndex">
+              <label for="inputPassword" class="col-md-3 col-form-label">Property</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="" placeholder="property" formControlName="property" required>
+              </div>
+              <div class="col-sm-1" *ngIf="propertyIndex == 0">
+                <button type="button" class="btn btn-labeled btn-success" (click)="addProperty()">
+                  <span class="btn-label">+</span>
+                </button>
+              </div>
+              <div class="col-sm-1" *ngIf="propertyIndex > 0">
+                <button type="button" class="btn btn-labeled btn-success" (click)="deleteProperty(propertyIndex)">
+                  <span class="btn-label">-</span>
+                </button>
+              </div>
+              <div class="col-sm-2" *ngIf="propertyIndex == 0">
+                <button type="button" class="btn btn-labeled btn-success" (click)="saveCharacter()">
+                  <span class="btn-label">save</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-5 col-sm-12 right margin">
+        <div class="container">
+          <h2 class="text-uppercase text-align">character list</h2>
+          <h6 class="text-align">--------------------------------------------------------</h6>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th class="character-list text-uppercase">Character Name</th>
+                <th class="character-list text-uppercase">Properties</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let character of characters" class="text-align">
+                <td class="character-list">{{character.characterName}}</td>
+                <td>
+                  <p *ngFor="let property of character.properties" class="text-align">
+                    {{property.property}}
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

@@ -1,0 +1,67 @@
+<div class="page-wrapper chiller-theme toggled">
+  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-brand">
+        <a>games portal</a>
+        <div id="close-sidebar">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="sidebar-header">
+        <div class="user-pic">
+          <img class="img-responsive img-rounded"
+            src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+            alt="User picture">
+        </div>
+        <div class="user-info">
+          <span class="user-role">Administrator</span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="sidebar-menu">
+        <ul>
+          <li class="header-menu">
+            <span>General</span>
+          </li>
+          <li class="sidebar-dropdown">
+            <a routerLink="manageusers">
+              <i class="fa fa-users"></i>
+              <span>Manage Users</span>
+              <span class="badge badge-pill badge-danger" *ngIf="usersCount">{{usersCount}}</span>
+            </a>
+          </li>
+          <li class="sidebar-dropdown">
+            <a routerLink="createcharacter">
+              <i class="fa fa-plus"></i>
+              <span>Create Characters</span>
+              <span class="badge badge-pill badge-danger" *ngIf="charactersCount">{{charactersCount}}</span>
+            </a>
+          </li>
+
+        </ul>
+        <ul>
+          <li class="header-menu">
+            <span>Accounts</span>
+          </li>
+          <li class="sidebar-dropdown">
+            <a (click)="logout()">
+              <i class="fa fa-sign-out"></i>
+              <span>Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

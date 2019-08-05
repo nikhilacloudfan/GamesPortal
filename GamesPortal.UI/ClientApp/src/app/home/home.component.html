@@ -1,0 +1,63 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand text-white">GAMES PORTAL</a>
+  <div class="btn-group">
+    <img src="../../assets/images/download.png" alt="" class="dropdown-toggle image ml-5" data-toggle="dropdown">
+    <strong class="username text-uppercase" *ngIf="userDetails">
+      {{userDetails.userName}}
+    </strong>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" (click)="onResetPassword()">Reset Password</a>
+        <a class="dropdown-item" (click)="onLogout()">Logout</a>
+      </div>
+  </div>
+</nav>
+<!-- <div class="card m-5" style="width: 18rem" *ngIf="userDetails">
+  <ul class="list-group">
+    <li class="list-group-item"><strong>Username: </strong>{{userDetails.userName}}</li>
+    <li class="list-group-item"><strong>Fullname: </strong>{{userDetails.fullName}}</li>
+    <li class="list-group-item"><strong>Email: </strong>{{userDetails.email}}</li>
+  </ul>
+</div> -->
+<div class="container mt-3">
+  <div class="row mt-3">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+        <strong> Select and Create Character</strong>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" *ngFor="let character of characters"
+           (click)="createCharacter(character.characterId)">{{character.characterName}}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="header">
+      <h2 *ngIf="userCharacters.length">Designed Characters</h2>
+      <h2 *ngIf="!userCharacters.length">No Characters Available</h2>
+    </div>
+    <table class="table table-hover table-dark table-bordered" *ngFor="let character of userCharacters">
+      <thead>
+        <tr>
+          <th scope="col">Character Type</th>
+          <th scope="col">Character Name</th>
+          <th scope="col" *ngFor="let property of character.properties">{{property.property}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">{{character.characterName}}</th>
+          <td>{{character.name}}</td>
+          <td *ngFor="let property of character.properties">{{property.value}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<sc-modal id="resetpassword" class="default">
+  <app-resetpassword></app-resetpassword>
+</sc-modal>
+<sc-modal id="designcharacter" class="default">
+  <app-designcharacter></app-designcharacter>
+</sc-modal>

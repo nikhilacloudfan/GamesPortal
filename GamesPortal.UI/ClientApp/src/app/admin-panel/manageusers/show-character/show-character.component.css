@@ -1,0 +1,38 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    overflow: scroll;
+    outline: 0;
+    width: 500px;
+    height:400px;
+  }
+  
+  .modal-footer {
+    border-top: none;
+    margin-top: -2rem;
+  }
+  
+  .modal-header {
+    font-size: 22px;
+    font-weight: 600;
+    color: #063d6f;
+    justify-content: center;
+  }
+  
+  .error{
+    color:red;
+  }
+  
+  .alignright{
+    text-align:right;
+  }
+  
+  .alignright {
+    text-align: right;
+  }
+  

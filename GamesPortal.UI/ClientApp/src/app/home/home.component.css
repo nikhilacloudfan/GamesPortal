@@ -1,0 +1,17 @@
+.image {
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  color: #FFF;
+}
+
+.username {
+  margin: auto;
+  color: #FFF;
+  margin-top: 5px;
+}

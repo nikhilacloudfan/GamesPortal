@@ -1,0 +1,14 @@
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\bin\Debug\netcoreapp2.2\GamesPortal.Core.deps.json
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\bin\Debug\netcoreapp2.2\GamesPortal.Core.dll
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\bin\Debug\netcoreapp2.2\GamesPortal.Core.pdb
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\obj\Debug\netcoreapp2.2\GamesPortal.Core.csproj.CoreCompileInputs.cache
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\obj\Debug\netcoreapp2.2\GamesPortal.Core.AssemblyInfoInputs.cache
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\obj\Debug\netcoreapp2.2\GamesPortal.Core.AssemblyInfo.cs
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\obj\Debug\netcoreapp2.2\GamesPortal.Core.csproj.CopyComplete
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\obj\Debug\netcoreapp2.2\GamesPortal.Core.dll
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\obj\Debug\netcoreapp2.2\GamesPortal.Core.pdb
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\obj\Debug\netcoreapp2.2\GamesPortal.Core.csprojAssemblyReference.cache
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\bin\Debug\netcoreapp2.2\GamesPortal.Common.dll
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\bin\Debug\netcoreapp2.2\GamesPortal.DB.dll
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\bin\Debug\netcoreapp2.2\GamesPortal.DB.pdb
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Core\bin\Debug\netcoreapp2.2\GamesPortal.Common.pdb

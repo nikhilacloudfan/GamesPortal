@@ -1,0 +1,29 @@
+<div class="modal">
+  <div class="modal-header">
+    {{character.characterName}}
+  </div>
+  <div class="modal-body">
+    <div class="container">
+      <div class="row mb-3">
+        <strong>Character Details</strong>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>
+            Character Name :
+          </strong>{{character.characterName}}
+        </li>
+        <li class="list-group-item" *ngFor="let property of character.properties">
+          <strong>
+            {{property.property}} :
+          </strong>{{property.value}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div class="col-md-12 alignright">
+      <button type="button" class="btn btn-primary" (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+</div>
