@@ -63,8 +63,12 @@ namespace GamesPortal.Core.Impl
 
         public async Task<int> SaveDesignedCharacter(GameCharacter character, string userId)
         {
-            if (_context.UserCharacters.Any(m => m.CharacterName == character.Name && m.UserId == userId))
-                return 2;
+            var userCharacter = _context.UserCharacters.FirstOrDefault(m => m.CharacterName == character.Name && m.UserId == userId);
+            if (userCharacter != null){
+                var response = JsonConvert.DeserializeObject<GameCharacter>(userCharacter.CharacterDescription);
+                if (response.Properties?.FirstOrDefault(m => m?.Property == "Level")?.Value == character.Properties?.FirstOrDefault(m => m?.Property == "Level")?.Value)
+                    return 2;
+            }
             var characterDescription = JsonConvert.SerializeObject(character);
             var gameCharacter = new UserCharacter()
             {

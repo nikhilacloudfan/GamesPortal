@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesPortal.DB", "GamesPortal.DB\GamesPortal.DB.csproj", "{A6DEB098-4EA9-4CFC-BF5C-44635F60E3A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamesPortal.DB", "GamesPortal.DB\GamesPortal.DB.csproj", "{A6DEB098-4EA9-4CFC-BF5C-44635F60E3A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesPortal.Core", "GamesPortal.Core\GamesPortal.Core.csproj", "{18218059-3BCD-43F6-ADE4-B92314D47740}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamesPortal.Core", "GamesPortal.Core\GamesPortal.Core.csproj", "{18218059-3BCD-43F6-ADE4-B92314D47740}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesPortal.API", "GamesPortal.API\GamesPortal.API.csproj", "{1D49F1D2-ED1B-4634-AEF9-484DFF380DD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamesPortal.API", "GamesPortal.API\GamesPortal.API.csproj", "{1D49F1D2-ED1B-4634-AEF9-484DFF380DD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesPortal.Common", "GamesPortal.Common\GamesPortal.Common.csproj", "{C996BC86-EE42-426D-B48A-1994236EC270}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamesPortal.Common", "GamesPortal.Common\GamesPortal.Common.csproj", "{C996BC86-EE42-426D-B48A-1994236EC270}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesPortal.UI", "GamesPortal.UI\GamesPortal.UI.csproj", "{8FDA39F2-4331-4979-8D06-00FAD9AAD669}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamesPortal.UI", "GamesPortal.UI\GamesPortal.UI.csproj", "{8FDA39F2-4331-4979-8D06-00FAD9AAD669}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CB20BF79-A504-423A-B918-EE9C3436D756}"
+	ProjectSection(SolutionItems) = preProject
+		SetUpInstructions.txt = SetUpInstructions.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

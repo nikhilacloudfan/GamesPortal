@@ -1,4 +1,4 @@
-<form #form="ngForm">
+ <form #form="ngForm">
   <div class="modal" *ngIf="character">
     <div class="modal-header">
       Design Character {{character.characterName}}
@@ -13,8 +13,11 @@
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">Name The Character</span>
             </div>
-            <input name="characterName" type="text" class="form-control" aria-label="Default"
-                   aria-describedby="inputGroup-sizing-default" [(ngModel)]="character.name" required ngModel>
+            <input name="characterName" type="text" class="form-control" aria-label="Default" #UserName="ngModel"
+                   aria-describedby="inputGroup-sizing-default" [(ngModel)]="character.name" required pattern="[a-zA-Z0-9 ]+" ngModel>
+            <label class="text-danger" *ngIf="UserName.errors?.pattern">
+              Name must contain only alphabets and numbers
+            </label>
           </div>
         </div>
         <div class="row">

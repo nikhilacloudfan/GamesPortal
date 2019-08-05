@@ -1,0 +1,9 @@
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Common\obj\Release\netcoreapp2.2\GamesPortal.Common.csprojAssemblyReference.cache
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Common\obj\Release\netcoreapp2.2\GamesPortal.Common.csproj.CoreCompileInputs.cache
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Common\bin\Release\netcoreapp2.2\GamesPortal.Common.deps.json
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Common\bin\Release\netcoreapp2.2\GamesPortal.Common.dll
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Common\bin\Release\netcoreapp2.2\GamesPortal.Common.pdb
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Common\obj\Release\netcoreapp2.2\GamesPortal.Common.AssemblyInfoInputs.cache
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Common\obj\Release\netcoreapp2.2\GamesPortal.Common.AssemblyInfo.cs
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Common\obj\Release\netcoreapp2.2\GamesPortal.Common.dll
+C:\Users\nrathnakara\Desktop\GamesPortal\GamesPortal.Common\obj\Release\netcoreapp2.2\GamesPortal.Common.pdb

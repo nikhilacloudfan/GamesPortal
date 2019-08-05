@@ -1,0 +1,37 @@
+Minimum requirments
+--------------------
+#VS2017
+#Node JS latest
+#.NET Core 2.2
+
+
+Setup Instructions
+---------------------
+
+#Open the GamesPortal.API Project
+
+#Go to applicationsettings.Development.json
+
+#Change the connection string so that it points to your local DB
+
+#Go to your local db and Create a database named "UserDB"
+
+#Make sure that you dont have anything inside Migrations folder under GamesPortal.DB project.
+
+#Open command prompt and navigate to GamesPortal.DB project
+
+#Execute this command "dotnet ef --startup-project ../GamesPortal.Api/ migrations add Initial"
+
+#Go to Migrations folder under GamesPortal.DB project and verify that the Migration files are generated. 
+
+#Come back to Visual Studio and open Package Manager Console.
+
+#Run the following command in Package Manager Console "update-database -v"
+
+#Go to your UserDB database and make sure that you can see all the tables.
+
+#In command prompt navigate to GamesPortal.UI/ClientApp and execute following command "npm install" if not done already.
+
+#After completion of npm install, Make GamesPortal.API and GamesPortal.UI as startup projects.
+
+#Run the Application by clicking on start button.

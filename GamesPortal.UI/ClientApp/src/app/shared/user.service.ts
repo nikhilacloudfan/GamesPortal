@@ -18,7 +18,7 @@ export class UserService {
   readonly baseURI = environment.baseURI;
 
   formModel = this.fb.group({
-    UserName: ['',[Validators.required,Validators.minLength(3),Validators.pattern("^[a-z0-9_-]{3,16}$")]],
+    UserName: ['',[Validators.required,Validators.minLength(3),Validators.pattern("^[A-Za-z0-9_-]{3,16}$")]],
     Email: ['', Validators.email],
     FullName: [''],
     Role: '',

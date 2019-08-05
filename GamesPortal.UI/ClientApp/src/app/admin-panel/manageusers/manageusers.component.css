@@ -25,7 +25,6 @@ section {
 section .section-title {
     text-align: center;
     color: #007b5e;
-    margin-bottom: 50px;
     text-transform: uppercase;
 }
 
@@ -109,6 +108,8 @@ section .section-title {
 .frontside .card,
 .backside .card {
     min-height: 312px;
+    max-height: 312px;
+    overflow-y: scroll;
 }
 
 .backside .card a {
@@ -135,3 +136,12 @@ section .section-title {
     width: 40px;
     border-radius: 10px;
 }
+
+.text-align {
+  text-align: center;
+  color: darkgreen;
+  margin-bottom: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 600;
+} 
